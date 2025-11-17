@@ -1,0 +1,96 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background-color: #1c1d25;
+  color: #f6f6f6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+#gameCanvas {
+  border: 4px solid #f6f6f6;
+  border-radius: 8px;
+  background: linear-gradient(#8ed6ff, #87cefa);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+  image-rendering: pixelated;
+}
+
+.hint {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #b3f7ff;
+  text-shadow: 0 0 8px rgba(179, 247, 255, 0.5);
+}
+
+.menu-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 10, 20, 0.85);
+  z-index: 10;
+}
+
+.menu-card {
+  background: rgba(17, 24, 39, 0.95);
+  border: 2px solid #3ebbf0;
+  border-radius: 16px;
+  padding: 36px 64px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.menu-card h1 {
+  font-size: 2.2rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 12px;
+  color: #b3f7ff;
+}
+
+.menu-card p {
+  margin-bottom: 28px;
+  color: #9ac7ff;
+  letter-spacing: 0.1em;
+  font-size: 0.95rem;
+}
+
+.menu-card button {
+  background: linear-gradient(120deg, #1dd1a1, #10ac84);
+  border: none;
+  color: #0c1b21;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 12px 48px;
+  font-size: 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-card button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(16, 172, 132, 0.4);
+}
+

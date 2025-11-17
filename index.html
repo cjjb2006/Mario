@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>像素平台跳跃 - Mario Example</title>
+    <meta name="description" content="开源网页版像素平台跳跃小游戏，支持金币收集、踩敌人、通关旗杆等经典玩法。" />
+    <meta property="og:title" content="像素平台跳跃 - Mario Example" />
+    <meta property="og:description" content="开源网页版像素平台跳跃小游戏，支持金币收集、踩敌人、通关旗杆等经典玩法。" />
+    <meta property="og:type" content="game" />
+    <meta property="og:image" content="assets/player.png" />
+    <link rel="icon" type="image/png" href="assets/player.png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-wrapper">
+      <div class="menu-overlay" id="menu">
+        <div class="menu-card">
+          <h1>像素冒险</h1>
+          <p>方向键移动 · 空格跳跃</p>
+          <button id="startButton">开始游戏</button>
+        </div>
+      </div>
+      <canvas id="gameCanvas" width="960" height="540"></canvas>
+      <div class="hint">方向键移动，空格跳跃</div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
+
